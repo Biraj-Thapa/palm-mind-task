@@ -1,6 +1,5 @@
 import Message from "../models/message.model.js";
 
-// Get all messages
 export const getMessages = async (req, res) => {
   try {
     const messages = await Message.find().populate("user", "name email").sort({ createdAt: 1 });
