@@ -9,7 +9,6 @@ export const getMessages = async (req, res) => {
   }
 };
 
-// Create a new message
 export const createMessage = async (req, res) => {
   try {
     const { text } = req.body;
